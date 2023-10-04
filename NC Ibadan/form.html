@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almost There, Champ</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="page">
+        <section id="form_container" class="">
+            <a id="logo_container" href="index.html">
+                <img id="logo" src="Web assets/NC Ibadan - Black.svg" alt="">
+            </a>
+            
+            <!--  THE FORM -->
+            <form action="" data-multipart-form>
+
+                <!-- FIRST NAME -->
+                <div class="form_section active" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your first name</h3>
+                        <p>Let us put a name to your personality.</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="firstName" id="firstName" type="text" required placeholder="Enter Your First Name">
+                    </div>   
+                </div>
+                <!-- FIRST NAME -->
+
+                 <!-- LAST NAME -->
+                 <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your last name</h3>
+                        <p>Let us put a name to your personality.</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="lastName" id="lastName" type="text" required placeholder="Enter Your Last Name">
+                    </div>   
+                </div>
+                <!-- LAST NAME -->
+
+                <!-- GENDER -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your Gender</h3>
+                        <p>What do you identify as</p>
+                    </div>
+                        <div class="input-group">
+                            <!-- select box -->
+                            <select class="combo-box" name="gender" id="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Non Binary">Non Binary</option>
+                                <option value="prefer not to say">prefer not to say</option>
+                            </select>
+                        </div>        
+                </div>
+                <!-- GENDER -->
+
+                <!-- AIESEC MAIL -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your AIESEC mail</h3>
+                        <p>How can we contact you</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="email" id="email" type="email" required placeholder="Enter Your AIESEC Mail">
+                    </div>
+                </div>
+                <!-- AIESEC MAIL -->
+
+                <!-- YEAR OF BIRTH -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your date of birth</h3>
+                        <p>They say it's just a number</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="date-picker" type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <!-- YEAR OF BIRTH -->
+
+                <!-- YOUR LC-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Tell us your LC</h3>
+                        <p>What local Committee are you from?</p>
+                    </div>
+                    <div class="input-group">
+
+                        <!-- select box -->
+                        <select class="combo-box" name="localCom" id="localCom">
+                            <option value="Abuja">Abuja</option>
+                            <option value="Abeokuta ">Abeokuta </option>
+                            <option value="Akure">Akure</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Calabar">Calabar</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Ibadan ">Ibadan </option>
+                            <option value="Ife">Ife</option>
+                            <option value="Ilorin">Ilorin</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Jos">Jos</option>
+                            <option value="Port Harcourt">Port Harcourt</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- YOUR LC-->
+
+                <!-- year you joined AIESEC-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Year you Joined AIESEC</h3>
+                        <p>When did your search for knowledge begin?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="yearJoined" id="yearJoined" type="number" required placeholder="Enter The Year">
+                    </div>
+                </div>
+                <!-- year you joined AIESEC-->
+
+                <!-- title in LC -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Title in the LC</h3>
+                        <p>What level are you at in your Local Committee</p>
+                    </div>
+                    <div class="input-group">
+                        <!-- select box -->
+                        <select class="combo-box" name="title" id="title">
+                            <option value="TM">TM</option>
+                            <option value="TL">TL</option>
+                            <option value="EST">EST</option>
+                            <option value="LCVP">LCVP</option>
+                            <option value="LCP">LCP</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- title in LC -->
+
+                <!-- social media handle-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Social Media handle</h3>
+                        <p>What other aliases do you identify as?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="social" id="social" type="text" placeholder="Enter Social Media Handle"> 
+                    </div>   
+                </div>
+                <!-- social media handle-->
+
+                <!-- allergies-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Allergies</h3>
+                        <p>What could be the cause of your ailment?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="allergies" id="allergies" type="text" placeholder=""> 
+                    </div>   
+                </div>
+                <!-- allergies-->
+
+                <!-- treatment-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Treatment</h3>
+                        <p>How do you treat it?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="treatments" id="treatments" type="text" placeholder="">
+                    </div>   
+                </div>
+                <!-- treatment-->
+
+                <!-- opposite sex -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Do you mind sleeping in a room with the opposite sex</h3>
+                        <p>it’s a Yes or No</p>
+                    </div>
+                    <div class="input-group">
+
+                        <!-- select box -->
+                        <select class="combo-box" name="sameSexRoomie" id="sameSexRoomie">
+                            <option value="NO">NO</option>
+                            <option value="YES">YES</option>
+                        </select>
+                    </div>   
+                </div>
+                <!-- opposite sex -->
+
+                <!-- emergency number -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Emergency Number</h3>
+                        <p>How do we contact your rescuer?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="emergencyPhone" id="emergencyPhone" type="number" required placeholder="" >
+                    </div>   
+                </div>
+                <!-- emergency number -->
+
+                <!-- relationship to emergency number-->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Relationship to emergency phone number</h3>
+                        <p>What other aliases do you identify as?</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="emergencyRelation" id="emergencyRelation" type="text" required placeholder="">
+                    </div>   
+                </div>
+                <!-- relationship to emergency number-->
+
+                <!-- Any other thing you wanna add -->
+                <!-- LAST SLIDE OF FORMS -->
+                <div class="form_section" data-form-section>
+                    <div class="prompt">
+                        <h3>Anything you want to add?</h3>
+                        <p>Feel free to let us know</p>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-field" name="aob" id="aob" type="text" placeholder="">
+                        <a href="CongratulationsPage.html">
+                        <input type="submit" value="Submit">
+                        </a>
+                    </div>
+                </div>
+                <!-- Any other thing you wanna add -->
+
+            </form> 
+            <!--  THE FORM ENDS HERE -->
+
+            <div id="form_extra">
+                <div id="label">
+                    <img src="Web assets/padDesign.svg" alt="">
+                    <span>Basic information</span>
+                </div>
+                <span id="number-track">1/3</span>
+                <div id="button-container">
+                    <button id="prev-btn" class="form-btn disabled">
+                        <svg width="100%" height="100%" viewBox="0 0 77 77" fill="none">
+                            <rect x="-0.5" y="0.5" width="100%" height="100%" transform="matrix(-1 0 0 1 76 0)" fill="none" fill-opacity="none" stroke="none"/>
+                            <rect width="5.50915" height="5.50915" transform="matrix(-1 0 0 1 41.49 41.277)" fill="#D50E50"/>
+                            <rect width="5.50915" height="5.50915" transform="matrix(-1 0 0 1 41.49 30.2585)" fill="#D50E50"/>
+                            <rect width="5.50915" height="5.50915" transform="matrix(-1 0 0 1 35.9822 35.7678)" fill="#D50E50"/>
+                            <rect width="5.50915" height="5.50915" transform="matrix(-1 0 0 1 47.0005 25)" fill="#D50E50"/>
+                            <rect width="5.50915" height="5.50915" transform="matrix(-1 0 0 1 47.0005 46.7863)" fill="#D50E50"/>
+                        </svg>
+                    </button>
+                    <button id="next-btn" class="form-btn">
+                        <svg width="100%" height="100%" viewBox="0 0 77 77" fill="none">
+                            <rect x="0.5" y="0.5" width="100%" height="100%" fill="none" fill-opacity="none" stroke="none"/>
+                            <rect x="35.51" y="41.277" width="5.50915" height="5.50915" fill="#D50E50"/>
+                            <rect x="35.51" y="30.2585" width="5.50915" height="5.50915" fill="#D50E50"/>
+                            <rect x="41.0178" y="35.7678" width="5.50915" height="5.50915" fill="#D50E50"/>
+                            <rect x="29.9995" y="25" width="5.50915" height="5.50915" fill="#D50E50"/>
+                            <rect x="29.9995" y="46.7863" width="5.50915" height="5.50915" fill="#D50E50"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <img id="paper-design-forMobile" src="Web assets/paperDesignForMobile.svg" alt="">
+            <img id="paper-design" src="Web assets/paperDesign.svg" alt="">
+
+        </section>
+
+            <!-- BLACL CARD -->
+            <section id="section_2" class="">
+                <div class="timer-card">
+                    <span>You are one step closer to securing a seat at the table.</span>
+                    <div class="timer">
+                        <h3 id="countdown" class="actual-timer">Almost there, champ!</h3>
+                        <a href="index.html">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                <path d="M0.5 38L38 0.5" stroke="white" stroke-width="0.700935"/>
+                                <path d="M38 38L0.499999 0.5" stroke="white" stroke-width="0.700935"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+<script src="form.js"></script>
+
+</body>
+</html>

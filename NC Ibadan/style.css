@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+  
+  body {
+    line-height: 1;
+    font-weight: 400;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.heading-text-large{
+    font-family: Inter;
+    font-weight: 800; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.header-menu span {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #D50E50;
+    text-transform: uppercase;
+    padding: 0 1.2rem;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: #D50E50;
+}
+
+.header-menu a:hover{
+    text-decoration: none;
+    color: black;
+    animation: fadeIn 0.6s;
+}
+
+.heading-text-small{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #330312),
+    url('_KAP8541.jpg');
+    background-size: cover;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.hero-textbox {
+    padding: 2rem 3rem;
+    margin-top: 4.5rem;
+}
+
+.hero-textbox img{
+    width: 30px;
+}
+
+.hero-textbox h1 {
+    white-space: wrap;
+    font-size: 3rem;
+    color: #fff;
+    max-width: 400px;
+}
+
+.hero-textbox p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #fff;
+    display: none;
+    width: 34.8rem;    
+    margin-top: 5rem;
+}
+
+.hero-cardbox {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    padding: 4rem 3rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: Inter;
+    height: 12rem;
+    flex-grow: 0;
+    gap: 0.4rem;
+    max-width: max-content;
+}
+
+.date-card span{
+    font-weight: 400;
+}
+
+.hero-cardbox .date-card h1 {
+    font-size: 2.8rem;
+}
+
+.hero-cardbox .date-card span {
+    font-size: 2.8rem;
+}
+
+.timer-card {
+    color: #fff;
+    background-color:#D50E50;
+    padding: 4rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.timer-card span {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 1.4rem;
+    width: 17.7rem;
+    line-height: 1.9rem;
+}
+
+.timer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer a{
+    width: 30px;
+}
+
+.timer img {
+    width: 100%;
+}
+
+.timer a:hover{
+    width: 50px;
+    transition: width 0.3s ease-out;
+}
+
+.actual-timer{
+    font-family: Inter;
+}
+
+.hero-cardbox .timer-card .timer h1 {
+    font-size: 3rem;
+}
+
+@media all and (min-width: 1024px) {
+
+    .header{
+        padding: 2rem 6rem;
+    }
+
+    .hero{
+        border: 2rem solid white;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .hero-textbox {
+        padding: 2rem 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;   
+    }
+
+    .hero-textbox h1{
+        font-size: 40px;
+    }
+
+    .hero-textbox p {
+        display: initial;
+        width: calc(500px - 6rem);
+        font-size: 14px;
+    }
+
+    .hero-cardbox {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .timer-card{
+        padding: 3rem;
+        width: 100%;
+        max-width:500px;
+        justify-content:space-between;
+        height: 250px;
+    }
+
+    .timer{
+        height: 70px;
+    }
+
+    .date-card{
+        padding: 4rem 6rem;
+        font-family: Inter;
+    }
+}
